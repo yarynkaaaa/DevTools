@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DevTools Hub</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#">DevTools <span class="hub">Hub</span></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#resources">Ресурси</a></li>
+                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+                <!-- Поле пошуку -->
+                <section class="search-section">
+                    <div class="search-container">
+                        <div class="search-icon" id="searchIcon">
+                            <img src="./icons/search.svg" alt="search icon" />
+                        </div>
+                        <input type="text" id="searchInput" placeholder="Пошук..." class="hidden" />
+                    </div>
+                </section>
+                <!-- -------------кнопочка з темами------------- -->
+                <div class="theme-toggle">
+                    <button id="themeButton">
+                        <img
+                            src="./icons/light-theme.svg"
+                            alt="Sun icon for light mode"
+                            id="themeIcon"
+                        />
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Головний екран -->
+            <section id="home" class="hero">
+                <h1>
+                    Ласкаво просимо до <br />
+                    <span class="hub2-1">DevTools <span class="hub">Hub</span></span>
+                </h1>
+                <div class="intro-text">
+                    <h2>Інструменти, плагіни та ресурси</h2>
+                    <p>
+                        які значно полегшать процес програмування та зроблять його більш ефективним.
+                    </p>
+                </div>
+
+                <a href="#resources" class="btn"><span>Переглянути ресурси</span></a>
+            </section>
+
+            <!-- Категорії ресурсів -->
+            <section id="resources" class="resources">
+                <h2>Категорії ресурсів</h2>
+                <div class="cards">
+                    <div class="card search-item">
+                        <h3>🖥️ IDE та редактори</h3>
+                        <p>Огляд найкращих середовищ розробки: VS Code, JetBrains, Sublime Text.</p>
+                    </div>
+                    <div class="card search-item">
+                        <h3>🔌 Плагіни та розширення</h3>
+                        <p>Найкорисніші плагіни для продуктивної роботи в коді.</p>
+                    </div>
+                    <div class="card search-item">
+                        <h3>📚 Курси та документація</h3>
+                        <p>Найкращі онлайн-курси, книги та навчальні ресурси.</p>
+                    </div>
+                    <div class="card search-item">
+                        <h3>⚡ Інструменти для продуктивності</h3>
+                        <p>Сервіси для керування кодом, організації роботи та колаборації.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Блог -->
+            <section id="blog" class="blog">
+                <h2>Корисні гайди</h2>
+                <div class="blog-posts">
+                    <article class="post search-item">
+                        <h3>Як вибрати редактор коду?</h3>
+                        <p>Огляд найпопулярніших IDE для новачків та їх налаштування.</p>
+                    </article>
+                    <article class="post search-item">
+                        <h3>Найкращі плагіни для VS Code</h3>
+                        <p>Топ-10 плагінів, які покращать ваш досвід у програмуванні.</p>
+                    </article>
+                </div>
+            </section>
+            <!-- Контактна форма -->
+            <section id="contact" class="contact">
+                <h2>Зв'язатися з нами</h2>
+                <form action="#" method="POST" class="contact-form">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required placeholder="Ваше ім'я" />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ваша пошта" />
+
+                    <label for="message">Повідомлення:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        required
+                        placeholder="Ваше повідомлення"
+                    ></textarea>
+
+                    <button type="submit">Відправити</button>
+                </form>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 DevTools Hub. Усі права захищені.</p>
+                <ul class="footer-links">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#resources">Ресурси</a></li>
+                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

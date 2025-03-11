@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+/* Основний стиль для header */
+header {
+    background: #222;
+    padding: 15px 0;
+    color: white;
+}
+
+/* Стили для навігації */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Центруємо контейнер */
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hub {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #2f4f2f;
+    background-color: #2f4f2f;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2f4f2f;
+}
+
+/* Пошукова секція */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-container {
+    position: relative;
+    width: 150px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.search-icon{
+    width: 40px;
+}
+.search-icon img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#searchInput.active {
+    display: block;
+}
+
+/* Кнопка для зміни теми */
+.theme-toggle button {
+    background: none;
+    border: none;
+    outline: none;
+    /* Прибирає білу обводку */
+    padding: 0;
+}
+.theme-toggle {
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.theme-toggle img {
+    width: 31px;
+    height: 30px;
+    /* Прибирає будь-яку рамку */
+    outline: none;
+    /* Прибирає обводку при фокусі */
+    display: block;
+    /* Встановлює зображення як блочний елемент, щоб не було непотрібного простору */
+}
+
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #3a6c4c, #2a472a);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+.hub2-1 {
+    display: inline-block;
+    /* Задаємо блоковий елемент, щоб рамка і заливка працювали */
+    padding: 5px 10px;
+    /* Трохи відступів для вмісту */
+    border: 2px solid #222;
+    /* Темно-зелена рамка */
+    background-color: #222;
+    /* Темно-зелене заливання */
+    color: rgb(255, 255, 255);
+    /* Білий текст */
+    border-radius: 5px;
+    /* Закруглені кути */
+    font-size: 25px;
+    font-weight: bold;
+    /* Жирний шрифт */
+}
+.intro-text {
+    font-family: 'Arial', sans-serif;
+    /* Вибір шрифту */
+    font-size: 1.2rem;
+    /* Розмір шрифта */
+    line-height: 1.6;
+    /* Висота рядка для зручності читання */
+    color: #4c4c4c;
+    text-align: center;
+    /* Центрування тексту */
+}
+
+.intro-text h2 {
+    font-size: 1.5rem;
+    /* Розмір для заголовка */
+    color: #222;
+    /* Темно-зелений колір для заголовка */
+    margin-bottom: 5px;
+    /* Відступ під заголовком */
+}
+
+.intro-text p {
+    font-size: 1rem;
+    /* Розмір основного тексту */
+    color: #333;
+    /* Темний колір тексту */
+    margin-bottom: 15px;
+    /* Відступ після абзаців */
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #222, #2a472a);
+    /* Градієнт від хакі до темно-зеленого */
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    /* Округлі краї */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #6c7d3d, #2f4f2f);
+    /* Зміна градієнту при наведенні */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    /* Збільшена тінь */
+    transform: translateY(-5px);
+    /* Піднімання кнопки при наведенні */
+}
+
+.btn:active {
+    transform: translateY(2px);
+    /* Кнопка опускається при натисканні */
+}
+
+.btn span {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.btn:hover span::after {
+    transform: translateY(-50%) scaleX(1);
+    /* Лінія підкреслення з'являється при наведенні */
+    transform-origin: left center;
+}
+.search-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchInput {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cards,
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card,
+.post {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.card a,
+.post a {
+    display: block;
+    margin-top: 10px;
+    color: #2f4f2f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ----------------------Контактна форма------------------ */
+.contact {
+    background: #fff;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: #325432;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #2f4f2f;
+}
+
+/* -----------------------Footer----------------------------- */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #2f4f2f;
+}
