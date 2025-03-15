@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DevTools Hub</title>
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/fonts.css" />
     </head>
     <body>
         <header>
@@ -43,10 +44,10 @@
         <main>
             <!-- Головний екран -->
             <section id="home" class="hero">
-                <h1>
-                    Ласкаво просимо до <br />
+                <h1>Ласкаво просимо до <br /></h1>
+                <p>
                     <span class="hub2-1">DevTools <span class="hub">Hub</span></span>
-                </h1>
+                </p>
                 <div class="intro-text">
                     <h2>Інструменти, плагіни та ресурси</h2>
                     <p>
@@ -57,43 +58,131 @@
                 <a href="#resources" class="btn"><span>Переглянути ресурси</span></a>
             </section>
 
-            <!-- Категорії ресурсів -->
-            <section id="resources" class="resources">
-                <h2>Категорії ресурсів</h2>
-                <div class="cards">
-                    <div class="card search-item">
-                        <h3>🖥️ IDE та редактори</h3>
-                        <p>Огляд найкращих середовищ розробки: VS Code, JetBrains, Sublime Text.</p>
-                    </div>
-                    <div class="card search-item">
-                        <h3>🔌 Плагіни та розширення</h3>
-                        <p>Найкорисніші плагіни для продуктивної роботи в коді.</p>
-                    </div>
-                    <div class="card search-item">
-                        <h3>📚 Курси та документація</h3>
-                        <p>Найкращі онлайн-курси, книги та навчальні ресурси.</p>
-                    </div>
-                    <div class="card search-item">
-                        <h3>⚡ Інструменти для продуктивності</h3>
-                        <p>Сервіси для керування кодом, організації роботи та колаборації.</p>
-                    </div>
+            <section class="resource-section">
+                <h2 class="resource-title">Категорії ресурсів</h2>
+                <div class="resource-grid">
+                    <a href="./editors.html" class="resource-card">
+                        <div class="resource-icon-left">
+                            <img src="icons/computer.svg" alt="Редактори" />
+                        </div>
+                        <div class="resource-content">
+                            <h3>Редактори та середовища розробки</h3>
+                            <p>
+                                Популярні IDE та текстові редактори: VS Code, JetBrains, Sublime
+                                Text.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="./courses.html" class="resource-card">
+                        <div class="resource-icon-right">
+                            <img src="icons/document.svg" alt="Курси" />
+                        </div>
+                        <div class="resource-content">
+                            <h3>Навчальні курси та документація</h3>
+                            <p>Онлайн-курси, корисні книги та технічні гайди.</p>
+                        </div>
+                    </a>
+
+                    <a href="./plugins.html" class="resource-card">
+                        <div class="resource-icon-right">
+                            <img src="icons/code.svg" alt="Плагіни" />
+                        </div>
+                        <div class="resource-content">
+                            <h3>Плагіни та розширення</h3>
+                            <p>Найефективніші інструменти для покращення роботи в коді.</p>
+                        </div>
+                    </a>
+
+                    <a href="./productivity.html" class="resource-card">
+                        <div class="resource-icon-left">
+                            <img src="icons/bolt.svg" alt="Продуктивність" />
+                        </div>
+                        <div class="resource-content">
+                            <h3>Інструменти продуктивності</h3>
+                            <p>
+                                Сервіси для керування кодом, спільної роботи та організації
+                                процесів.
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </section>
 
-            <!-- Блог -->
-            <section id="blog" class="blog">
-                <h2>Корисні гайди</h2>
-                <div class="blog-posts">
-                    <article class="post search-item">
-                        <h3>Як вибрати редактор коду?</h3>
-                        <p>Огляд найпопулярніших IDE для новачків та їх налаштування.</p>
-                    </article>
-                    <article class="post search-item">
-                        <h3>Найкращі плагіни для VS Code</h3>
-                        <p>Топ-10 плагінів, які покращать ваш досвід у програмуванні.</p>
-                    </article>
+            <!-- ---------------Професії ------------------->
+            <section class="resources">
+                <h2 class="carousel-tttitle">Ресурси для твоєї професії</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="carousel">
+                        <div class="card">
+                            <img src="./img/web-designer.png" alt="Web designer" />
+                            <h3>Web designer</h3>
+                            <p>
+                                Для створення візуально привабливих та зручних для користувача
+                                веб-сайтів: <br />
+                                <b>Figma, Adobe XD, Dribbble, Behance </b>та ін.
+                            </p>
+                            <button>Дізнатися більше</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/front-developer.png" alt="Front-end developer" />
+                            <h3>Front-end developer</h3>
+                            <p>
+                                Розробка інтерфейсу користувача, використовуючи <br />
+                                <b>HTML, CSS та JavaScript,</b> а також <br />
+                                <b
+                                    >MDN Web Docs, CSS Tricks, FreeCodeCamp, Frontend Mentor та
+                                    ін.</b
+                                >
+                            </p>
+                            <button>Дізнатися більше</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/Back_end_developer.jpg" alt="Back-end developer" />
+                            <h3>Back-end developer</h3>
+                            <p>
+                                Робота з серверною частиною сайтів, керування базами даних та
+                                логікою програми: <br />
+                                <b>Node.js Docs, PHP.net, PostgreSQL, Laravel.</b>
+                            </p>
+                            <button>Дізнатися більше</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/fullstack.png" alt="Fullstack developer" />
+                            <h3>Fullstack developer</h3>
+                            <p>
+                                Поєднання як фронтенду, так і бекенду, для створення повноцінних
+                                веб-додатків: <br />
+                                <b>The Odin Project, Fullstack Open, Roadmap.sh.</b>
+                            </p>
+                            <button>Дізнатися більше</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/qa-tester.png" alt="QA-tester" />
+                            <h3>QA-tester</h3>
+                            <p>
+                                Тестування програмного забезпечення, перевірка його якості та
+                                функціональності:<br />
+                                <b>ISTQB, Test Automation University, Guru99.</b>
+                            </p>
+                            <button>Дізнатися більше</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/cyber.jpg" alt="Cyber specialist" />
+                            <h3>Cyber specialist</h3>
+                            <p>
+                                Захист системи від атак хакерів, аналіз загроз та впровадження
+                                заходів безпеки:<br />
+                                <b>Hack The Box, OWASP, Cybrary, TryHackMe.</b>
+                            </p>
+                            <button>Дізнатися більше</button>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
                 </div>
             </section>
+
             <!-- Контактна форма -->
             <section id="contact" class="contact">
                 <h2>Зв'язатися з нами</h2>
@@ -129,5 +218,6 @@
             </div>
         </footer>
         <script src="script.js"></script>
+        <script src="swiper.js"></script>
     </body>
 </html>
