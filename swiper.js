@@ -1,6 +1,6 @@
 const carousel = document.querySelector(".carousel");
 const cards = document.querySelectorAll(".card");
-let cardWidth = cards[0].offsetWidth + 20; // Ширина картки + відступ
+let cardWidth = cards[0].offsetWidth + 60; // Ширина картки + відступ
 let currentIndex = 0;
 
 function moveSlide(direction) {
