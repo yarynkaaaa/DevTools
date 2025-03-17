@@ -14,9 +14,9 @@
                     <a href="#">DevTools <span class="hub">Hub</span></a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#">Головна</a></li>
+                    <li><a href="./index.html">Головна</a></li>
                     <li><a href="#resources">Ресурси</a></li>
-                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#professions">Професії</a></li>
                     <li><a href="#contact">Контакти</a></li>
                 </ul>
                 <!-- Поле пошуку -->
@@ -58,12 +58,12 @@
                 <a href="#resources" class="btn"><span>Переглянути ресурси</span></a>
             </section>
 
-            <section class="resource-section">
+            <section id="resources" class="resource-section">
                 <h2 class="resource-title">Категорії ресурсів</h2>
                 <div class="resource-grid">
                     <a href="./editors.html" class="resource-card">
                         <div class="resource-icon-left">
-                            <img src="icons/computer.svg" alt="Редактори" />
+                            <img src="icons/computer-grey.svg" alt="Редактори" id="editors-icon" />
                         </div>
                         <div class="resource-content">
                             <h3>Редактори та середовища розробки</h3>
@@ -76,7 +76,7 @@
 
                     <a href="./courses.html" class="resource-card">
                         <div class="resource-icon-right">
-                            <img src="icons/document.svg" alt="Курси" />
+                            <img src="icons/document-grey.svg" alt="Курси" id="courses-icon" />
                         </div>
                         <div class="resource-content">
                             <h3>Навчальні курси та документація</h3>
@@ -86,7 +86,7 @@
 
                     <a href="./plugins.html" class="resource-card">
                         <div class="resource-icon-right">
-                            <img src="icons/code.svg" alt="Плагіни" />
+                            <img src="icons/code-grey.svg" alt="Плагіни" id="plugins-icon" />
                         </div>
                         <div class="resource-content">
                             <h3>Плагіни та розширення</h3>
@@ -96,7 +96,11 @@
 
                     <a href="./productivity.html" class="resource-card">
                         <div class="resource-icon-left">
-                            <img src="icons/bolt.svg" alt="Продуктивність" />
+                            <img
+                                src="icons/bolt-grey.svg"
+                                alt="Продуктивність"
+                                id="productivity-icon"
+                            />
                         </div>
                         <div class="resource-content">
                             <h3>Інструменти продуктивності</h3>
@@ -110,7 +114,7 @@
             </section>
 
             <!-- ---------------Професії ------------------->
-            <section class="resources">
+            <section id="professions" class="resources">
                 <h2 class="carousel-tttitle">Ресурси для твоєї професії</h2>
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
@@ -217,6 +221,9 @@
                 </ul>
             </div>
         </footer>
+        <button id="scrollToTop" class="scroll-to-top">
+            <img src="./icons/up.svg" alt="up" />
+        </button>
         <script src="script.js"></script>
         <script src="swiper.js"></script>
     </body>

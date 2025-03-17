@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DevTools Hub</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/fonts.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">DevTools <span class="hub">Hub</span></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Головна</a></li>
+                    <li><a href="#resources">Ресурси</a></li>
+                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+                <!-- Поле пошуку -->
+                <section class="search-section">
+                    <div class="search-container">
+                        <div class="search-icon" id="searchIcon">
+                            <img src="./icons/search.svg" alt="search icon" />
+                        </div>
+                        <input type="text" id="searchInput" placeholder="Пошук..." class="hidden" />
+                    </div>
+                </section>
+                <!-- -------------кнопочка з темами------------- -->
+                <div class="theme-toggle">
+                    <button id="themeButton">
+                        <img
+                            src="./icons/light-theme.svg"
+                            alt="Sun icon for light mode"
+                            id="themeIcon"
+                        />
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main></main>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 DevTools Hub. Усі права захищені.</p>
+                <ul class="footer-links">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#resources">Ресурси</a></li>
+                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+        <script src="swiper.js"></script>
+    </body>
+</html>
