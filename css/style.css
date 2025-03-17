@@ -456,7 +456,8 @@ nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.1);
     border: none;
     padding: 8px 12px;
     /* Зменшено розмір кнопок */
@@ -467,7 +468,7 @@ nav {
 }
 
 .carousel-btn:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .carousel-btn.prev {
